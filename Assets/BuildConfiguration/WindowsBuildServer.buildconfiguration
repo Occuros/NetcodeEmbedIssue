@@ -1,6 +1,8 @@
 {
     "Show": true,
-    "Dependencies": [],
+    "Dependencies": [
+        "GlobalObjectId_V1-1-04053cd88df9f25428df75ebf812905b-93214019566545601-0"
+    ],
     "Components": [
         {
             "$type": "Unity.Build.Classic.ClassicBuildProfile, Unity.Build.Classic",
@@ -17,8 +19,13 @@
         {
             "$type": "Unity.Build.Common.SceneList, Unity.Build",
             "$version": 1,
-            "BuildCurrentScene": true,
-            "SceneInfos": []
+            "BuildCurrentScene": false,
+            "SceneInfos": [
+                {
+                    "Scene": "GlobalObjectId_V1-1-9fc0d4010bbf28b4594072e72b8655ab-102900000-0",
+                    "AutoLoad": true
+                }
+            ]
         },
         {
             "$type": "Unity.Build.Common.PlayerScriptingDefines, Unity.Build",
@@ -34,6 +41,10 @@
             "ScriptingBackend": 0,
             "Il2CppCompilerConfiguration": 1,
             "UseIncrementalGC": true
+        },
+        {
+            "$type": "Unity.Entities.Conversion.ConversionSystemFilterSettings, Unity.Entities.Hybrid",
+            "ExcludedConversionSystemAssemblies": []
         }
     ]
 }
